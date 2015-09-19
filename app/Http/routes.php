@@ -11,5 +11,5 @@ get('api/messages', function() {
 });
 
 post('api/messages', function() {
-	App\Message::create(Request::all());
+	return App\Message::create(Request::all());
 });

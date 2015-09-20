@@ -33,10 +33,10 @@ new Vue({
 			});
 		},
 
-		onSubmitForm: function() {
+		onSubmitForm: function(evt) {
 
 			// prevent the default action
-			e.preventDefault();
+			evt.preventDefault();
 
 			// save variable for the message object
 			var message = this.newMessage;
